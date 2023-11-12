@@ -23,9 +23,12 @@
                 int usersCarChoice = Convert.ToInt32(usersItems);
                 if (usersCarChoice != null)
                 {
-                    Console.WriteLine($"{Car.Cars[usersCarChoice]}\n");
+                    Console.WriteLine($"{usersCarChoice} : {Car.Cars[usersCarChoice]}\n");
                     Car.Remove(usersCarChoice);
-                    Console.WriteLine($"{Car.ListCars}");
+                    foreach (var carItem in Car.Cars)
+                    {
+                        Console.WriteLine(carItem);
+                    }
                 }
                 else
                     Console.WriteLine("Unavailable item or Invalid response. Please try again.");
