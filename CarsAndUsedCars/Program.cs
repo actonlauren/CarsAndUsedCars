@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            RunProgram();
+
+        }
+        static void RunProgram ()
+        {
+            Car car = new Car ();
+
+            Console.WriteLine (car.ToString());
         }
     }
 }
