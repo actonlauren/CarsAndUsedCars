@@ -36,4 +36,14 @@ namespace CarsAndUsedCars
         }
                 
     }
+
+    public class UsedCar
+    {
+        public double Mileage { get; set; }
+
+        public UsedCar()
+        {
+            
+        }
+    }
 }
