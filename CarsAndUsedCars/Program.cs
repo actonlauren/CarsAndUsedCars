@@ -21,7 +21,7 @@
                 Console.WriteLine("Which car would you like to buy, by number?");
                 string usersItems = Console.ReadLine().ToLower();
                 int usersCarChoice = Convert.ToInt32(usersItems);
-                if (usersCarChoice != null)
+                if(usersCarChoice < Car.Cars.Count())
                 {
                     Console.WriteLine($"{usersCarChoice} : {Car.Cars[usersCarChoice]}\n");
                     Car.Remove(usersCarChoice);
